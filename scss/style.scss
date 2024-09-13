@@ -1,20 +1,18 @@
-// Все стили прописаны в style.scss !!! в css всё выглядит страшно! Выполнял на scss, потому что хочу получить бейдж "Маэстро". 
-
 @font-face {
-  font-family: "Steppe-Book" format("truetype");
+  font-family: "Steppe-Book";
   src: url(../source/fonts/Steppe-Book.ttf);
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
-  font-family: "Steppe-Book" format("truetype");
-  src: url(../source/fonts/Steppe-ExtraBold.ttf); // Это не является ошибкой, шрифт отлично применяется, тут я оптимизировал применение Font-family: "Steppe-Book".
+  font-family: "Steppe-ExtraBold";
+  src: url(../source/fonts/Steppe-ExtraBold.ttf);
   font-weight: 800;
   font-style: normal;
 }
 
 body {
-  .main{
+  .main {
     position: relative;
     overflow: hidden;
   }
@@ -28,7 +26,6 @@ body {
     border-radius: 60px;
     width: 178px;
     height: 58px;
-    box-sizing: border-box;
     padding: 18px;
     text-align: center;
     font-size: 18px;
@@ -47,17 +44,20 @@ body {
       background-color: #3b2ad3;
     }
   }
+
   .common-title {
-    font-family: "Steppe-Book", sans-serif;
+    font-family: "Steppe-ExtraBold", sans-serif;
     font-weight: 800;
     font-size: 60px;
     line-height: 100%;
     text-align: center;
   }
+
   .container {
     max-width: 1200px;
     margin: 0 auto;
   }
+
   header {
     padding: 40px 0;
     .container {
@@ -88,17 +88,17 @@ body {
       }
     }
   }
+
   .main-content {
     padding-top: 161px;
     padding-bottom: 200px;
-    position: relative;
     max-width: 1920px;
 
     .main-info {
       max-width: 890px;
 
       .main-title {
-        font-family: "Steppe-Book", sans-serif;
+        font-family: "Steppe-ExtraBold", sans-serif;
         font-weight: 800;
         font-size: 90px;
         line-height: 100%;
@@ -107,10 +107,11 @@ body {
       .main-text {
         max-width: 697px;
         font-size: 18px;
-        line-height: 100%;
+        line-height: 130%;
         margin-bottom: 40px;
       }
     }
+
     .main-image {
       position: absolute;
       top: 0;
@@ -118,6 +119,7 @@ body {
       z-index: -1;
     }
   }
+
   .products {
     padding: 100px 0;
     position: relative;
@@ -148,7 +150,7 @@ body {
           padding: 24px;
 
           .products-item-title {
-            font-family: "Steppe-Book", sans-serif;
+            font-family: "Steppe-ExtraBold", sans-serif;
             font-weight: 800;
             font-size: 18px;
             margin-bottom: 20px;
@@ -169,14 +171,14 @@ body {
 
             .products-item-info {
               .products-item-price {
-                font-family: "Steppe-Book", sans-serif;
+                font-family: "Steppe-ExtraBold", sans-serif;
                 font-weight: 800;
 
                 color: #5243f4;
                 font-size: 24px;
                 margin-bottom: 10px;
               }
-              .products-item-weiht {
+              .products-item-weight {
                 font-size: 12px;
               }
             }
@@ -199,7 +201,7 @@ body {
         height: 453px;
 
         .love-item-title {
-          font-family: "Steppe-Book", sans-serif;
+          font-family: "Steppe-ExtraBold", sans-serif;
           font-weight: 800;
           font-size: 24px;
           line-height: 110%;
@@ -218,22 +220,25 @@ body {
       }
     }
   }
+
   .order {
     position: relative;
     padding-bottom: 102px;
-    .container{
+    .container {
       position: relative;
     }
-.order-bg-image{
-  position: absolute;
-  top:0;
-  right: calc(100% - 810px);
-  z-index: -1;
-}
+
+    .order-bg-image {
+      position: absolute;
+      top: 0;
+      right: calc(100% - 810px);
+      z-index: -1;
+    }
+
     .order-block {
       display: flex;
       margin-top: 103px;
-      background-color: rgba(255 255 255 /30%);
+      background-color: rgba(255, 255, 255, 0.3);
       backdrop-filter: blur(50px);
 
       .order-form {
@@ -243,7 +248,7 @@ body {
         box-sizing: border-box;
 
         .order-form-text {
-          font-family: "Steppe-Book", sans-serif;
+          font-family: "Steppe-ExtraBold", sans-serif;
           font-weight: 800;
           font-size: 18px;
           line-height: 130%;
@@ -276,6 +281,7 @@ body {
           }
         }
       }
+
       .order-block-image {
         height: calc(559px - 58px);
         margin-left: 109px;
@@ -288,28 +294,32 @@ body {
       }
     }
   }
-  .footer{
+
+  .footer {
     padding: 126px 0 50px 0;
     text-align: center;
-    .rights{
+    .rights {
       margin-top: 14px;
       font-size: 18px;
     }
   }
 
-  .line-1{
+  .line-1 {
     position: absolute;
     z-index: -1;
     top: 0;
     left: calc(100% - 960px);
   }
-  .line-2{    position: absolute;
+  .line-2 {
+    position: absolute;
     z-index: -1;
     top: -40px;
     left: 0;
-  
-}.line-3{    position: absolute;
-  z-index: -1;
-  top: -920px;
-  left: 0;}
+  }
+  .line-3 {
+    position: absolute;
+    z-index: -1;
+    top: -920px;
+    left: 0;
+  }
 }

@@ -1,5 +1,3 @@
- /*! Все стили прописаны в style.scss !!! в css всё выглядит страшно! Выполнял на scss, потому что хочу получить бейдж "Маэстро".  */
-
 @font-face {
   font-family: "Steppe-Book" format("truetype");
   src: url(../source/fonts/Steppe-Book.ttf);
@@ -7,8 +5,8 @@
   font-style: normal;
 }
 @font-face {
-  font-family: "Steppe-Book" format("truetype");
-  src: url(../source/fonts/Steppe-ExtraBold.ttf); /*Это не является ошибкой, шрифт отлично применяется, тут я оптимизировал применение Font-family: "Steppe-Book". */
+  font-family: "Steppe-Book-extrabold" format("truetype");
+  src: url(../source/fonts/Steppe-ExtraBold.ttf);
   font-weight: 800;
   font-style: normal;
 }
@@ -46,7 +44,7 @@ body .violet-button:hover {
   background-color: #3b2ad3;
 }
 body .common-title {
-  font-family: "Steppe-Book", sans-serif;
+  font-family: "Steppe-Book-extrabold", sans-serif;
   font-weight: 800;
   font-size: 60px;
   line-height: 100%;
@@ -85,7 +83,6 @@ body header .menu .menu-list li a:hover {
 body .main-content {
   padding-top: 161px;
   padding-bottom: 200px;
-  position: relative;
   max-width: 1920px;
 }
 body .main-content .main-info {
@@ -101,7 +98,7 @@ body .main-content .main-info .main-title {
 body .main-content .main-info .main-text {
   max-width: 697px;
   font-size: 18px;
-  line-height: 100%;
+  line-height: 130%;
   margin-bottom: 40px;
 }
 body .main-content .main-image {
