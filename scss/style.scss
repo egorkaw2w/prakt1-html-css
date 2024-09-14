@@ -1,14 +1,14 @@
 @font-face {
   font-family: "Steppe-Book";
-  src: url(../source/fonts/Steppe-Book.ttf);
-  font-weight: 500;
-  font-style: normal;
+  src: url("../source/fonts/Steppe-Book.ttf") format(truetype);
+  // font-weight: 500;
+  // font-style: normal;
 }
 @font-face {
   font-family: "Steppe-ExtraBold";
-  src: url(../source/fonts/Steppe-ExtraBold.ttf);
-  font-weight: 800;
-  font-style: normal;
+  src: url("../source/fonts/Steppe-ExtraBold.ttf") format(truetype);
+  // font-weight: 800;
+  // font-style: normal;
 }
 
 body {
