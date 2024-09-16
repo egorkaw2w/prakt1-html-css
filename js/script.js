@@ -32,14 +32,13 @@ document.getElementById("change-currency").onclick = function (e) {
   } else if (currentCurrency === "₽") {
     newCurrency = "BYN";
     coefficient = 3;
-  }
-  else if (currentCurrency === 'BYN') {
-    newCurrency = '€';
+  } else if (currentCurrency === "BYN") {
+    newCurrency = "€";
     coefficient = 0.9;
-} else if (currentCurrency === '€') {
-    newCurrency = '¥';
+  } else if (currentCurrency === "€") {
+    newCurrency = "¥";
     coefficient = 6.9;
-}
+  }
   e.target.innerText = newCurrency;
 
   for (let i = 0; i < prices.length; i++) {
@@ -53,6 +52,9 @@ document.getElementById("change-currency").onclick = function (e) {
 const product = document.getElementById("product");
 const name = document.getElementById("name");
 const phone = document.getElementById("phone");
+
+const names = document.getElementsByClassName("products-item-title");
+
 document.getElementById("order-action").onclick = function () {
   let hasError = false;
 
